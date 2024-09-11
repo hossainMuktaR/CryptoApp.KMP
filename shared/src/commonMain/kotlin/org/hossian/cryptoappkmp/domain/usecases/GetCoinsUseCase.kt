@@ -1,4 +1,4 @@
-package org.hossian.cryptoappkmp.domain.UseCases
+package org.hossian.cryptoappkmp.domain.usecases
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

@@ -2,14 +2,12 @@ package org.hossian.cryptoappkmp.coin_details
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
-import org.hossian.cryptoappkmp.Constants
 import org.hossian.cryptoappkmp.common.Resource
-import org.hossian.cryptoappkmp.domain.UseCases.GetCoinUseCase
+import org.hossian.cryptoappkmp.domain.usecases.GetCoinUseCase
 
 class CoinDetailsViewModel (
     private val getCoinUseCase: GetCoinUseCase = GetCoinUseCase(),

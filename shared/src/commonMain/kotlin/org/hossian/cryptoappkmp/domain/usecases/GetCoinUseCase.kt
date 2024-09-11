@@ -1,4 +1,4 @@
-package org.hossian.cryptoappkmp.domain.UseCases
+package org.hossian.cryptoappkmp.domain.usecases
 
 import io.ktor.utils.io.errors.IOException
 import kotlinx.coroutines.flow.Flow

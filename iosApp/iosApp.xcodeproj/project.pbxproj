@@ -10,7 +10,17 @@
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
-		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		BC57BBCD2C92230D00E26873 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBBE2C92230D00E26873 /* ListItem.swift */; };
+		BC57BBCE2C92230D00E26873 /* CoinListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC02C92230D00E26873 /* CoinListScreen.swift */; };
+		BC57BBCF2C92230D00E26873 /* CoinListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC12C92230D00E26873 /* CoinListState.swift */; };
+		BC57BBD02C92230D00E26873 /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC22C92230D00E26873 /* CoinListViewModel.swift */; };
+		BC57BBD12C92230D00E26873 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC42C92230D00E26873 /* ContentView.swift */; };
+		BC57BBD22C92230D00E26873 /* CoinDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC52C92230D00E26873 /* CoinDetailPage.swift */; };
+		BC57BBD32C92230D00E26873 /* CoinTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC62C92230D00E26873 /* CoinTagView.swift */; };
+		BC57BBD42C92230D00E26873 /* TeamListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC72C92230D00E26873 /* TeamListItemView.swift */; };
+		BC57BBD52C92230D00E26873 /* CoinDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBC92C92230D00E26873 /* CoinDetailScreen.swift */; };
+		BC57BBD62C92230D00E26873 /* CoinDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBCA2C92230D00E26873 /* CoinDetailState.swift */; };
+		BC57BBD72C92230D00E26873 /* CoinDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC57BBCB2C92230D00E26873 /* CoinDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +28,19 @@
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* CryptoAppkmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAppkmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3632DC29227652001CCB65 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		BC57BBBE2C92230D00E26873 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		BC57BBC02C92230D00E26873 /* CoinListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListScreen.swift; sourceTree = "<group>"; };
+		BC57BBC12C92230D00E26873 /* CoinListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListState.swift; sourceTree = "<group>"; };
+		BC57BBC22C92230D00E26873 /* CoinListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
+		BC57BBC42C92230D00E26873 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../XcodeProjects/CryptoApp.ios/CryptoApp.ios/presentation/ContentView.swift; sourceTree = "<group>"; };
+		BC57BBC52C92230D00E26873 /* CoinDetailPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailPage.swift; sourceTree = "<group>"; };
+		BC57BBC62C92230D00E26873 /* CoinTagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinTagView.swift; sourceTree = "<group>"; };
+		BC57BBC72C92230D00E26873 /* TeamListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListItemView.swift; sourceTree = "<group>"; };
+		BC57BBC92C92230D00E26873 /* CoinDetailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailScreen.swift; sourceTree = "<group>"; };
+		BC57BBCA2C92230D00E26873 /* CoinDetailState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailState.swift; sourceTree = "<group>"; };
+		BC57BBCB2C92230D00E26873 /* CoinDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +90,10 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC57BBCC2C92230D00E26873 /* coin_detail */,
+				BC57BBC32C92230D00E26873 /* coin_list */,
+				BC57BBC42C92230D00E26873 /* ContentView.swift */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
@@ -85,6 +107,46 @@
 				AB3632DC29227652001CCB65 /* Config.xcconfig */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		BC57BBBF2C92230D00E26873 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				BC57BBBE2C92230D00E26873 /* ListItem.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		BC57BBC32C92230D00E26873 /* coin_list */ = {
+			isa = PBXGroup;
+			children = (
+				BC57BBBF2C92230D00E26873 /* components */,
+				BC57BBC02C92230D00E26873 /* CoinListScreen.swift */,
+				BC57BBC12C92230D00E26873 /* CoinListState.swift */,
+				BC57BBC22C92230D00E26873 /* CoinListViewModel.swift */,
+			);
+			path = coin_list;
+			sourceTree = "<group>";
+		};
+		BC57BBC82C92230D00E26873 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				BC57BBC52C92230D00E26873 /* CoinDetailPage.swift */,
+				BC57BBC62C92230D00E26873 /* CoinTagView.swift */,
+				BC57BBC72C92230D00E26873 /* TeamListItemView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		BC57BBCC2C92230D00E26873 /* coin_detail */ = {
+			isa = PBXGroup;
+			children = (
+				BC57BBC82C92230D00E26873 /* components */,
+				BC57BBC92C92230D00E26873 /* CoinDetailScreen.swift */,
+				BC57BBCA2C92230D00E26873 /* CoinDetailState.swift */,
+				BC57BBCB2C92230D00E26873 /* CoinDetailViewModel.swift */,
+			);
+			path = coin_detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +246,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC57BBD32C92230D00E26873 /* CoinTagView.swift in Sources */,
+				BC57BBD22C92230D00E26873 /* CoinDetailPage.swift in Sources */,
+				BC57BBCE2C92230D00E26873 /* CoinListScreen.swift in Sources */,
+				BC57BBCD2C92230D00E26873 /* ListItem.swift in Sources */,
+				BC57BBD12C92230D00E26873 /* ContentView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
-				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				BC57BBD42C92230D00E26873 /* TeamListItemView.swift in Sources */,
+				BC57BBD72C92230D00E26873 /* CoinDetailViewModel.swift in Sources */,
+				BC57BBD52C92230D00E26873 /* CoinDetailScreen.swift in Sources */,
+				BC57BBD02C92230D00E26873 /* CoinListViewModel.swift in Sources */,
+				BC57BBD62C92230D00E26873 /* CoinDetailState.swift in Sources */,
+				BC57BBCF2C92230D00E26873 /* CoinListState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +398,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,7 +425,7 @@
 					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
 				);
 				INFOPLIST_FILE = iosApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

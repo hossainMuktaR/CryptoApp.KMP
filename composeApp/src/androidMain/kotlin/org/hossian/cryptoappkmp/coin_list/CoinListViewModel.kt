@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import org.hossian.cryptoappkmp.common.Resource
-import org.hossian.cryptoappkmp.domain.UseCases.GetCoinsUseCase
+import org.hossian.cryptoappkmp.domain.usecases.GetCoinsUseCase
 
 class CoinListViewModel(
     private val getCoinsUseCase: GetCoinsUseCase = GetCoinsUseCase()
