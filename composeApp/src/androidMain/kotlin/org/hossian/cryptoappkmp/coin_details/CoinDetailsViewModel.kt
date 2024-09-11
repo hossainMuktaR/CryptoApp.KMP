@@ -4,6 +4,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import org.hossian.cryptoappkmp.Constants
@@ -12,14 +13,14 @@ import org.hossian.cryptoappkmp.domain.UseCases.GetCoinUseCase
 
 class CoinDetailsViewModel (
     private val getCoinUseCase: GetCoinUseCase = GetCoinUseCase(),
-    savedStateHandle: SavedStateHandle
+    coinId: String
 ) : ViewModel() {
 
     private val _state = mutableStateOf(CoinDetailState())
     val state: State<CoinDetailState> = _state
 
     init {
-        savedStateHandle.get<String>(Constants.PARAM_COIN_ID)?.let { coinId ->
+       coinId.let { coinId ->
             getCoin(coinId)
         }
     }
@@ -44,5 +45,17 @@ class CoinDetailsViewModel (
                 }
             }
         }
+    }
+}
+
+class CoinDetailsViewModelFactory(
+    private val coinId: String
+) : ViewModelProvider.Factory {
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        if (modelClass.isAssignableFrom(CoinDetailsViewModel::class.java)) {
+            return CoinDetailsViewModel(coinId = coinId) as T
+        }
+        throw IllegalArgumentException("Unknown ViewModel class")
     }
 }

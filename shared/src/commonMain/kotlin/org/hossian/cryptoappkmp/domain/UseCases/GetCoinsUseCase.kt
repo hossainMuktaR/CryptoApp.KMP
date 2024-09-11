@@ -1,7 +1,5 @@
 package org.hossian.cryptoappkmp.domain.UseCases
 
-import io.ktor.utils.io.errors.IOException
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import org.hossian.cryptoappkmp.common.Resource
@@ -15,7 +13,7 @@ class GetCoinsUseCase(
     fun execute(): Flow<Resource<List<Coin>>> = flow {
         try {
             emit(Resource.Loading())
-            val coins = repository.getCoins()
+            val coins = repository.getCoins().subList(0, 100)
             println("the size of response list are : ${coins.size}")
             emit(Resource.Success(coins))
         } catch(e: Exception) {

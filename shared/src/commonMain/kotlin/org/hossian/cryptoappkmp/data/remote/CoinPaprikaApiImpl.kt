@@ -51,7 +51,7 @@ class CoinPaprikaApiImpl: CoinPaprikaApi {
     }
 
     override suspend fun getCoinById(coinId: String): CoinDetails {
-        return client.get { CoinPaprikaRoutes.GET_COINS + "/${coinId}" }.body()
+        return client.get ( url = Url(CoinPaprikaRoutes.GET_COINS + "/${coinId}") ).body()
     }
 
 }
